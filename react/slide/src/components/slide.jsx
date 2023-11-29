@@ -57,7 +57,7 @@ export function Slide({ current }) {
     }
     console.log(current);
     console.log(items);
-  }, []);
+  }, [current]);
 
   return (
     <ul id="itemBox" className="flex w-fit absolute h-80 overflow-hidden">
