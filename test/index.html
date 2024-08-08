@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/head.css" />
+		<title>test</title>
+	</head>
+	<body>
+		<header id="header">
+			<div id="logo">
+				<img src="/public/logo192.png" alt="logo" />
+			</div>
+			<nav>
+				<ul>
+					<li class="li1">
+						<a href="/">ABOUT</a>
+						<ul class="ul2">
+							<li>소개</li>
+							<li>오시는 길</li>
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="/">ROOM</a>
+						<ul class="ul2">
+							<li>101</li>
+							<li>102</li>
+							<li>103</li>
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="/">SPECIAL</a>
+						<ul class="ul2">
+							<li>수영장</li>
+							<li>바베큐장</li>
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="/">TOUR</a>
+						<ul class="ul2">
+							<li>관광지</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="video">
+				<iframe
+					class="iframe"
+					src="https://www.youtube.com/embed/Jfd24YHedb4?si=5MBF0kKb58PapJ6H&autoplay=1&controls=0$mute=1"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen></iframe>
+			</div>
+			<img src="/public/image01.jpg" />
+		</main>
+
+		<script>
+			const header = document.querySelector('#header');
+			const headerHeight = header.getBoundingClientRect().height;
+
+			document.addEventListener('scroll', () => {
+				if (window.scrollY > headerHeight) {
+					header.classList.add('active');
+				} else {
+					header.classList.remove('active');
+				}
+			});
+		</script>
+	</body>
+</html>
