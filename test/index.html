@@ -3,24 +3,22 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/test/style.css" />
+		<link rel="stylesheet" href="/style.css" />
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 		<title>test</title>
 	</head>
 	<body>
 		<header id="header">
 			<div id="logo">
-				<img src="/test/public/logo192.png" alt="logo" />
+				<img src="/public/logo192.png" alt="logo" />
 			</div>
 			<nav>
 				<div class="menu_toggle_btn">
-					<img src="/test/public/menu-icon.png" alt="menu" />
+					<img src="/public/menu-icon.png" alt="menu" />
 				</div>
 				<ul class="ul1">
 					<li class="li1">
-						<a href="/test/index.html" class="li1_a">HOME</a>
-					</li>
-					<li class="li1">
-						<a href="/test/about.html" class="li1_a">ABOUT</a>
+						<a href="/about.html" class="li1_a">ABOUT</a>
 						<ul class="ul2">
 							<li><a href="/">소개</a></li>
 							<li><a href="/">오시는 길</a></li>
@@ -51,11 +49,19 @@
 			</nav>
 		</header>
 		<main>
-			<div id="video">
-				<!-- <img src="/test/public/image01.jpg" /> -->
+			<div class="carousel">
+				<div class="slides">
+					<img src="/public/image01.jpg" alt="Slide 1" />
+					<img src="/public/image02.jpg" alt="Slide 2" />
+					<img src="/public/image03.jpg" alt="Slide 3" />
+				</div>
+				<div class="controls">
+					<div class="control-prev">❮</div>
+					<div class="control-next">❯</div>
+				</div>
 			</div>
 		</main>
 
-		<script src="/test/test.js"></script>
+		<script src="/test.js"></script>
 	</body>
 </html>

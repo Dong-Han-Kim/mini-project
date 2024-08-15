@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<style>
+			.slide-container {
+				width: 300vw;
+				transition: all 1s;
+			}
+			.slide-box {
+				width: 100vw;
+				float: left;
+			}
+			.slide-box img {
+				width: 100%;
+			}
+			.btns {
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				padding: 10px;
+				z-index: 5;
+				top: -70px;
+				position: relative;
+			}
+			.angle-btn {
+				background: transparent;
+				border: none;
+				font-size: 30px;
+				color: gold;
+			}
+			.angle-btn:active {
+				color: darkgoldenrod;
+			}
+			.prev {
+				margin-right: 20px;
+			}
+			.next {
+				margin-left: 20px;
+			}
+		</style>
+		<title>Document</title>
+	</head>
+	<body>
+		<div style="overflow: hidden">
+			<div class="slide-container">
+				<div class="slide-box">
+					<img src="/public/image01.jpg" />
+				</div>
+				<div class="slide-box">
+					<img src="/public/image02.jpg" />
+				</div>
+				<div class="slide-box">
+					<img src="/public/image03.jpg" />
+				</div>
+			</div>
+			<div class="btns">
+				<button class="angle-btn prev"><</button>
+				<button class="angle-btn next">></button>
+			</div>
+		</div>
+		<script>
+			var slide = 1;
+			$('.prev').on('click', function () {
+				if (slide == 3) {
+					$('.slide-container').css('transform', 'translateX(100vw)');
+					slide = 2;
+				} else if (slide == 2) {
+					$('.slide-container').css('tranform', 'translateX(0vw)');
+					slide = 1;
+				}
+			});
+
+			$('.next').on('click', function () {
+				if (slide == 1) {
+					$('.slide-container').css('transform', 'translateX(-100vw)');
+					slide = 2;
+				} else if (slide == 2) {
+					$('.slide-container').css('transform', 'translateX(-200vw)');
+					sldie = 3;
+				}
+			});
+		</script>
+	</body>
+</html>

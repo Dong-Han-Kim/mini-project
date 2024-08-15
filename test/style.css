@@ -51,6 +51,9 @@ nav {
 	top: 0.938rem;
 	z-index: 999;
 }
+.menu_toggle_btn {
+	display: none;
+}
 
 .ul1 {
 	margin-right: 12.5rem;
@@ -141,15 +144,36 @@ nav > ul > li {
 	color: #000;
 }
 
-/* video */
-.video {
-	width: 100dvw;
-	height: 100dvh;
+/* carousel slide */
+.carousel {
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
 }
-.menu_toggle_btn {
-	width: 30px;
-	display: none;
+.carousel .slides {
+	display: flex;
+	transition: margin-left 1s;
 }
+.carousel .slides img {
+	width: 100vw;
+	flex-shrink: 0;
+}
+.carousel .controls {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(-50%);
+}
+.carousel .control-prev,
+.carousel .control-next {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
 	/* 타블렛 */
 	#logo {
