@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"></script>
+		<title>Scroll</title>
+		<style>
+			.addclass {
+				background-color: blue;
+			}
+			.none_display {
+				display: none;
+			}
+		</style>
+	</head>
+	<body style="height: 2200vh">
+		<div class="evt_target" style="width: 100vw; height: 880px; background-color: aqua"></div>
+		<div id="here" class="none_display" style="background-color: red; width: 100vw; height: 300px"></div>
+	</body>
+	<script>
+		$(window).scroll(function () {
+			const scrollTop = $(window).scrollTop();
+			const scrollBottom = $('.evt_target').height();
+			if (scrollTop > scrollBottom) {
+				$('#here').removeClass('none_display');
+			} else {
+				$('#here').addClass('none_display');
+			}
+		});
+	</script>
+</html>
