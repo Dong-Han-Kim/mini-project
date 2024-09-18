@@ -1,0 +1,33 @@
+#navlist {
+	display: flex;
+	width: 1000px;
+}
+
+#navlist li {
+	width: 30%;
+	list-style: none;
+	border: 1px solid black;
+	text-align: center;
+	height: 30px;
+	transition: all 0.3s ease;
+}
+
+#navlist li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.menu_active {
+	background-color: #eee;
+	transition: all 0.3s ease;
+}
+
+.iframe_case {
+	display: none;
+	transition: all 0.3s ease;
+}
+
+.iframe_active {
+	display: block;
+	transition: all 0.3s ease;
+}
