@@ -1,8 +1,6 @@
 const menuLi = document.querySelectorAll('#navlist li');
 const iframeCase = document.querySelectorAll('.iframe_case');
 
-console.log(Array.from(menuLi));
-
 function activeHandler(e) {
 	const targetMenu = Array.from(menuLi).indexOf(e.currentTarget);
 
