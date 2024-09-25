@@ -1,19 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+a {
+	color: #000;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0;
+}
+
 #navlist {
 	display: flex;
 	width: 1000px;
 	padding: 0;
+	margin-bottom: 0;
 }
 
 #navlist li {
-	width: 30%;
+	width: 33.3333%;
 	list-style: none;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border: 1px solid black;
 	text-align: center;
 	height: 30px;
 	transition: all 0.3s ease;
-	line-height: 1.8;
-	cursor: pointer;
+}
+
+#navlist li a {
+	text-decoration: none;
 }
 
 .menu_active {
@@ -26,9 +40,13 @@
 .iframe_case {
 	display: none;
 	transition: all 0.3s ease;
+	height: 800px;
+	width: 100%;
+	background-color: #000;
+	padding-top: 70px;
 }
 
 .iframe_active {
-	display: block;
+	display: inline-block;
 	transition: all 0.3s ease;
 }
