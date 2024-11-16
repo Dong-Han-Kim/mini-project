@@ -1,0 +1,25 @@
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+footer section {
+	width: 33.3333%;
+}
+#ft_left {
+	text-align: left;
+}
+#ft_center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#ft_right {
+	text-align: right;
+}
+#ft_right a {
+	color: #000;
+}
