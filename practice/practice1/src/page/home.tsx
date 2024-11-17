@@ -17,6 +17,7 @@ export default function Home() {
 						"Place a snippet of the best testimonial you've <br />
 						receuved from your client."
 					</p>
+					<p>Lorem ipsum</p>
 				</div>
 			</section>
 			<section id="section1">
@@ -29,7 +30,9 @@ export default function Home() {
 										<img src={el.src} alt="" />
 										<div className="text_wrap">
 											<p>{el.name}</p>
-											<div className="go_project">View Project </div>
+											<div className="go_project">
+												View Project <span className="arrow">&rsaquo;</span>
+											</div>
 										</div>
 									</a>
 								</li>
@@ -42,15 +45,20 @@ export default function Home() {
 				<Swiper
 					modules={[Pagination]}
 					spaceBetween={50}
-					slidesPerView={1}
+					slidesPerView={'auto'}
 					pagination={{ clickable: true }}
 					centeredSlides={true}>
 					{textSlide.map((el) => {
 						return (
 							<SwiperSlide key={el.id}>
-								<h1>{el.title}</h1>
-								<div>{el.text}</div>
-								<div>{el.subtext}</div>
+								<div className="slide_item">
+									<h1>{el.title}</h1>
+									<div className="slide_text">{el.text}</div>
+									<div className="slide_subtext">
+										<div className="text1">{el.subtext1}</div>
+										<div className="text2">{el.subtext2}</div>
+									</div>
+								</div>
 							</SwiperSlide>
 						);
 					})}

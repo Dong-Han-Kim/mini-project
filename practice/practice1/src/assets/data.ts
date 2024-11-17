@@ -26,17 +26,21 @@ export const textSlide = [
 		id: 'a',
 		title: 'Testimonials',
 		text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis numquam laborum est saepe ullam nihil, iste maxime ipsa harum dolor! Enim doloribus nam quos quia beatae corporis architecto vitae nostrum.',
-		subtext:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+		subtext1: 'Lorem ipsum dolor sit amet,',
+		subtext2: 'consectetur adipisicing elit.Lorem ipsum dolor sit amet.',
 	},
 	{
 		id: 'b',
 		title: 'Testimonials',
 		text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis numquam laborum est saepe ullam nihil, iste maxime ipsa harum dolor! Enim doloribus nam quos quia beatae corporis architecto vitae nostrum.',
+		subtext1: 'Lorem ipsum dolor sit amet,',
+		subtext2: 'consectetur adipisicing elit.Lorem ipsum dolor sit amet.',
 	},
 	{
 		id: 'c',
 		title: 'Testimonials',
 		text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis numquam laborum est saepe ullam nihil, iste maxime ipsa harum dolor! Enim doloribus nam quos quia beatae corporis architecto vitae nostrum.',
+		subtext1: 'Lorem ipsum dolor sit amet,',
+		subtext2: 'consectetur adipisicing elit.Lorem ipsum dolor sit amet.',
 	},
 ];

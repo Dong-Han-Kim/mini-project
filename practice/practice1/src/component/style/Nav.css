@@ -2,24 +2,43 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: aquamarine;
 	height: 100px;
 	padding: 0 20px;
+	color: #3e372f;
+}
+.logo {
+	font-family: 'Cafe24ClassicType-Regular';
+	font-size: 50px;
+}
+.logo a {
+	color: #3e372f;
 }
 
+.nav_content {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 55%;
+}
 .nav_ul {
 	display: inline-flex;
 	align-items: center;
-	background-color: bisque;
 	justify-content: space-between;
-	width: 40%;
+	width: 68%;
+	font-size: 18px;
 }
-
+.nav_ul li a {
+	color: #3e372f;
+}
+.movement {
+	color: #bfbfbf;
+}
 .nav_sns {
 	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 15%;
+	margin-right: 30px;
 }
 
 .nav_sns li {
